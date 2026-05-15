@@ -1,0 +1,4 @@
+{"id":"coupon_abuse_001","input":"大促期间大量新号通过代理IP注册，领取新人券后集中下单低价商品，部分订单随后退款。","expected_any_risks":["R0009","R0005","R0034","R0099","R0054-003"]}
+{"id":"account_farming_001","input":"一批账号每天自动评论、点赞、浏览商品来提升信誉，之后参与抢购和领券活动。","expected_any_risks":["R0034","R0001","R0088","R0003"]}
+{"id":"fake_transaction_001","input":"多个商家的订单来自同一批账号和相似地址，评价内容高度相似，物流轨迹异常。","expected_any_risks":["R0017","R0056","R0004"]}
+{"id":"credential_stuffing_001","input":"登录接口失败率升高，很多账号从不同IP尝试登录，成功后立即修改手机号绑定新设备使用余额。","expected_any_risks":["R0032","R0032-001","R0084","R0090","R0088"]}

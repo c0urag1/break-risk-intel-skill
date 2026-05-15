@@ -1,0 +1,17 @@
+# Scene Playbook Index
+
+- [`BS00` 全场景](all-scenes.md)
+- [`BS01` 数字金融](digital-finance.md)
+- [`BS02` 电商](ecommerce.md)
+- [`BS03` 航旅](travel.md)
+- [`BS04` 社交媒体](social-media.md)
+- [`BS05` 短视频&直播](short-video-live.md)
+- [`BS06` 游戏](gaming.md)
+- [`BS07` 新媒体](new-media.md)
+- [`BS08` 线上教育](telecom.md)
+- [`BS09` 政务网站](education.md)
+- [`BS10` 电子医疗](healthcare.md)
+- [`BS11` 汽车](automotive.md)
+- [`BS12` 保险](insurance.md)
+- [`BS13` 出行行业](mobility.md)
+- [`BS14` 人工智能](local-services.md)

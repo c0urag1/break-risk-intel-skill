@@ -1,0 +1,11 @@
+BREAK Grey Market Intel Analyst Skill includes normalized reference data derived from JDArmy/BREAK.
+
+JDArmy/BREAK:
+- Repository: https://github.com/JDArmy/BREAK
+- License: Apache License 2.0
+- Created and maintained by JDArmy
+
+This project is an Agent Skill adaptation built on top of JDArmy/BREAK.
+It adds Skill instructions, Markdown knowledge files, example cases, report templates, and safety boundaries for grey-market case analysis.
+
+This project does not claim ownership of the original BREAK framework, taxonomy, risk IDs, avoidance IDs, or reference data.

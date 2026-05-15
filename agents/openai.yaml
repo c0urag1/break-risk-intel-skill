@@ -1,0 +1,3 @@
+display_name: BREAK Risk Intel
+short_description: Black/grey-market intelligence analysis and BREAK risk mapping.
+default_prompt: Analyze this black/grey-market risk case, map it to exact BREAK risk IDs, and produce observables, an investigation plan, and mitigation suggestions.

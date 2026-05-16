@@ -17,7 +17,7 @@ This skill is for authorized risk-control, anti-fraud, anti-abuse, trust & safet
 
 1. Start with `references/risk-index.md` to ground likely BREAK risk IDs.
 2. Use `references/avoidance-index.md` and `references/avoidance-categories.md` to map risk IDs to controls and control domains.
-3. Use `references/business-scenes.md` and the relevant `scenes/*.md` playbook when the user mentions a business scene such as 电商, 金融, 内容平台, 商家, 出行, 游戏, or 本地生活.
+3. Use `references/business-scenes.md` and the relevant `scenes/*.md` playbook when the user mentions a business scene such as 电商, 金融, 内容平台, 商家, 出行, 游戏, 教育, 政务, 医疗, or 人工智能.
 4. Use `references/threat-actors.md` and `references/attack-tools.md` to identify likely roles, resources, and tooling signals without explaining how to operate them.
 5. Load exactly one or two relevant `knowledge/*.md` files based on the case:
    - coupon, campaign, voucher, refund, gift, membership benefits → `knowledge/marketing-abuse.md`

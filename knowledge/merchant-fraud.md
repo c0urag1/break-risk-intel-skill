@@ -48,7 +48,8 @@
 - 风险索引：`references/risk-index.md`
 - 规避手段：`references/avoidance-index.md`
 - 电商场景：`scenes/ecommerce.md`
-- 本地生活场景：`scenes/local-services.md`
+- 航旅场景：`scenes/travel.md`
+- 出行场景：`scenes/mobility.md`
 
 ## 常见角色与资源
 

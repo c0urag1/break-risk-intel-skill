@@ -16,18 +16,24 @@ This skill is for authorized risk-control, anti-fraud, anti-abuse, trust & safet
 ## Loading Rules
 
 1. Start with `references/risk-index.md` to ground likely BREAK risk IDs.
-2. Use `references/avoidance-index.md` and `references/avoidance-categories.md` to map risk IDs to controls and control domains.
-3. Use `references/business-scenes.md` and the relevant `scenes/*.md` playbook when the user mentions a business scene such as 电商, 金融, 内容平台, 商家, 出行, 游戏, 教育, 政务, 医疗, or 人工智能.
-4. Use `references/threat-actors.md` and `references/attack-tools.md` to identify likely roles, resources, and tooling signals without explaining how to operate them.
-5. Load exactly one or two relevant `knowledge/*.md` files based on the case:
+2. For black/grey-market case analysis, load the abuse-analysis layer as needed:
+   - `references/scene-taxonomy.md` for abuse-objective scenes.
+   - `references/abuse-chain-model.md` for conceptual chain analysis.
+   - `references/target-selection.md` for attack-target reasoning.
+   - `references/resource-preference.md` for resource hypotheses.
+   - `references/actor-roles.md` for possible role separation.
+3. Use `references/avoidance-index.md` and `references/avoidance-categories.md` to map risk IDs to controls and control domains.
+4. Use `references/business-scenes.md` and the relevant `scenes/*.md` playbook when the user mentions a business scene such as 电商, 金融, 内容平台, 商家, 出行, 游戏, 教育, 政务, 医疗, or 人工智能.
+5. Use `references/threat-actors.md` and `references/attack-tools.md` to identify likely roles, resources, and tooling signals without explaining how to operate them.
+6. Load exactly one or two relevant `knowledge/*.md` files based on the case:
    - coupon, campaign, voucher, refund, gift, membership benefits → `knowledge/marketing-abuse.md`
    - account, login, credential stuffing, account takeover, account farming → `knowledge/account-risk.md`
    - merchant, fake transaction, fake review, fake shipping → `knowledge/merchant-fraud.md`
    - content spam, fake engagement, off-platform traffic → `knowledge/content-abuse.md`
    - payment, cash-out, laundering, black card, refund fund flow → `knowledge/payment-risk.md`
    - proxy IP, device fingerprint, emulator, cloud phone, bot environment → `knowledge/device-network-risk.md`
-6. Use `examples/*.md` only when the user case resembles a known example.
-7. Use `templates/*.md` when the user asks for a report, matrix, brief, or investigation plan.
+7. Use `examples/*.md` only when the user case resembles a known example.
+8. Use `templates/case-analysis.md` for case analysis; use other `templates/*.md` when the user asks for a report, matrix, brief, or investigation plan.
 
 ## BREAK ID Integrity
 
@@ -39,19 +45,26 @@ This skill is for authorized risk-control, anti-fraud, anti-abuse, trust & safet
 
 ## Analysis Workflow
 
-1. Restate the case and business scene.
-2. Separate known facts, hypotheses, and missing evidence.
-3. Map the case to exact BREAK risk IDs with short reasons.
-4. Describe the possible abuse chain at a conceptual level.
-5. List observables across account, device, IP/ASN, phone, payment, address, coupon, order, content, merchant, logistics, and graph signals.
-6. Produce the requested deliverable: risk matrix, investigation plan, intelligence brief, strategy suggestions, or management report.
-7. Cite BREAK IDs and avoidance/control IDs where useful.
+1. Identify the business scene and abuse objective.
+2. Separate known facts, hypotheses, and evidence gaps.
+3. Analyze the likely attack target and why it may be attractive.
+4. Infer possible actor roles with confidence labels.
+5. Infer likely resource preferences with evidence basis.
+6. Build a conceptual abuse chain without operational steps.
+7. Identify possible monetization paths.
+8. Map the case to exact BREAK risk IDs with short reasons.
+9. List observables and control points across account, device, IP/ASN, phone, payment, address, coupon, order, content, merchant, logistics, settlement, and graph signals.
+10. Produce the requested deliverable with false-positive risk and next investigation steps.
 
 ## Response Rules
 
 - Prefer concise, analyst-friendly language.
 - Use exact BREAK IDs where they improve precision; never fabricate BREAK-like IDs.
 - Do not overclaim: label confidence and evidence gaps.
+- Separate facts, hypotheses, and missing evidence.
+- Do not present analyst heuristics as facts.
+- Label generated examples as synthetic examples.
+- Do not claim real-world incidents unless the user provides evidence.
 - Do not ask the user to run commands.
 - Do not mention internal loading steps unless useful.
 - If BREAK coverage is weak for the case, state the gap and propose an extension taxonomy.
